@@ -62,10 +62,10 @@ This project implements a **String Calculator** using **Test-Driven Development 
    ```
 2. Try different inputs:
    ```sh
-   node index.js "1\n2,3"
+   node index.js "1\\n2,3"
    ```
    ```sh
-   node index.js "//;\n1;2;3"
+   node index.js "//;\\n1;2;3"
    ```
    ```sh
    node index.js "1,-2,3,-4"
@@ -87,3 +87,34 @@ The `add` function follows these steps:
 This project demonstrates a **TDD-driven** approach to implementing a string calculator, emphasizing **incremental development, clean coding practices, and automated testing**.
 
 ---
+
+## Screenshots 
+1. On running the test cases
+   ```sh
+   npm run test
+   ```
+     or
+   ```sh
+   npm test
+   ```
+   
+   ![image](https://github.com/user-attachments/assets/d890d442-1db7-4e5c-b9cd-fb15257fdc98)
+
+2. On running through CMD terminal
+   ```sh
+   node index.js "1,-2,3,-4"
+   ```
+   ```sh
+   node index.js "1\n2,3"
+   ```
+   ```sh
+   node index.js "//;\n1;2"
+   ```
+   ```sh
+   node index.js "1,2,3,4"
+   ```
+   
+   ![image](https://github.com/user-attachments/assets/50634bbe-b643-49c0-8650-999056e8dc1c)
+
+
+
