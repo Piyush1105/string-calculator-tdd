@@ -14,3 +14,8 @@ test("returns sum of two numbers separated by a comma", () => {
 test("returns sum of multiple numbers separated by a comma", () => {
   expect(add("1,2,3,4")).toBe(10);
 });
+
+// Step 4: Support Newline as a Delimiter
+test("handles newlines between numbers", () => {
+  expect(add("1\n2,3")).toBe(6);
+});
