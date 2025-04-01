@@ -10,3 +10,7 @@ test("returns sum of two numbers separated by a comma", () => {
   expect(add("1,2")).toBe(3);
 });
 
+// Step 3: Support Multiple Numbers
+test("returns sum of multiple numbers separated by a comma", () => {
+  expect(add("1,2,3,4")).toBe(10);
+});
