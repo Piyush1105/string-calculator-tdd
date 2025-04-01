@@ -62,10 +62,10 @@ This project implements a **String Calculator** using **Test-Driven Development 
    ```
 2. Try different inputs:
    ```sh
-   node index.js "1\\n2,3"
+   node index.js "1\n2,3"
    ```
    ```sh
-   node index.js "//;\\n1;2;3"
+   node index.js "//;\n1;2;3"
    ```
    ```sh
    node index.js "1,-2,3,-4"
