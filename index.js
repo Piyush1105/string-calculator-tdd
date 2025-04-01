@@ -1,6 +1,11 @@
 const { add } = require("./src/calculator");
 
-const input = process.argv[2] || ""; // Get input from command-line arguments
+const rawInput = process.argv[2] || "";
+console.log(`Raw Input: ${JSON.stringify(rawInput)}`);
+
+const input = rawInput.replace(/\\n/g, '\n'); 
+console.log(`Processed Input: ${JSON.stringify(input)}`);
+
 try {
     console.log(`Result: ${add(input)}`);
 } catch (error) {
