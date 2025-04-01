@@ -22,6 +22,10 @@ test("handles newlines between numbers", () => {
 
 // Step 5: Support Custom Delimiters
 test("supports custom delimiters", () => {
-    expect(add("//;\n1;2")).toBe(3);
+  expect(add("//;\n1;2")).toBe(3);
 });
-  
+
+// Step 6: Handling Negative Numbers
+test("throws an exception when negative numbers are included", () => {
+  expect(() => add("1,-2,3,-4")).toThrow("negative numbers not allowed: -2,-4");
+});
