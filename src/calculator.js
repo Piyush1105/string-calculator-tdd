@@ -1,5 +1,6 @@
 function add(numbers) {
-  return numbers === "" ? 0 : parseInt(numbers, 10);
+  if (numbers === "") return 0;
+  return numbers.split(",").reduce((sum, num) => sum + parseInt(num, 10), 0);
 }
 
 module.exports = { add };
